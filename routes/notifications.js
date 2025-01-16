@@ -2,10 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 
-const users = require('./user.json')
+const notifications = require('./notifications.json')
 router.get('/', (req, res) => {
-    res.send(users)
-    console.log(users)
+    res.send(notifications)
+    console.log(notifications)
 });
 
 module.exports = router;

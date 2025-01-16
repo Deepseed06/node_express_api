@@ -2,10 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 
-const users = require('./user.json')
+const salesProducts = require('./saleProducts.json')
 router.get('/', (req, res) => {
-    res.send(users)
-    console.log(users)
+    res.send(salesProducts)
+    console.log(salesProducts)
 });
 
 module.exports = router;

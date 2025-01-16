@@ -2,10 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 
-const users = require('./user.json')
+const cart = require('./cart.json')
 router.get('/', (req, res) => {
-    res.send(users)
-    console.log(users)
+    res.send(cart)
+    console.log(cart)
 });
 
 module.exports = router;
