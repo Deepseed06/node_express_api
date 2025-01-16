@@ -15,7 +15,7 @@ app.use(bodyParser.json())
 app.use('/users/', usersRoutes)
 app.use('/saleProducts/', saleProducts)
 app.use('/products/', products)
-app.use('/products/', categories)
+app.use('/categories/', categories)
 app.use('/cart/', cart)
 app.use('/notifications/', notifications)
 app.get('/', (req, res) => {
