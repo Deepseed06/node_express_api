@@ -8,4 +8,11 @@ router.get('/', (req, res) => {
     console.log(salesProducts)
 });
 
+router.get('/:id', (req, res) => {
+    const {id} = req.params
+    const singleProducts = salesProducts.find((product) => product.id === id)
+    res.send(singleProducts)
+    
+});
+
 module.exports = router;
